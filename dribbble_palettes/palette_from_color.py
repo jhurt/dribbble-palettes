@@ -67,7 +67,10 @@ def cli():
     color_dir = 'palettes' + os.path.sep + args.hex_color
     if os.path.isdir(color_dir):
         shutil.rmtree(color_dir)
-    os.mkdir(color_dir)
+    try:
+        os.makedirs(color_dir)
+    except:
+        pass
 
     # create a square image of each color in the palette
     for color in palette_colors:
