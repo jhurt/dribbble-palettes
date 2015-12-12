@@ -19,5 +19,5 @@ pip install -r requirements.txt
 
 ### To get a palette from a single hex color, ex: 45305A
 ```bash
-python dribbble_palettes/palette_from_color.py -h 45305A
+python dribbble_palettes/palette_from_color.py -hex 45305A
 ```
