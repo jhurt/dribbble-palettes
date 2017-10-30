@@ -60,3 +60,4 @@ target/
 venv
 
 palettes
+.DS_Store

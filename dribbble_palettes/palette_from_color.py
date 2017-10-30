@@ -77,7 +77,7 @@ def cli():
         color_hex_image = Image.new('RGB', (50, 50), hex_to_rgb(color))
         color_hex_image.save(color_dir + os.path.sep + color[1:].lower() + '.png')
 
-    print "Generated palette colors for " + args.hex_color + " in " + color_dir
+    print('Generated palette colors for {} in {}'.format(args.hex_color, color_dir))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     cli()
